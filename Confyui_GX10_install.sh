@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Instalador idempotente ComfyUI GB10: instalação completa apenas se ausente;
-# numa instalação existente adiciona apenas downloader Hugging Face.
+# Instalador Ubuntu ComfyUI GB10: instalação completa apenas se ausente;
+# Numa instalação existente adiciona apenas downloader Hugging Face.
 set -Eeuo pipefail
 trap 'echo "ERRO na linha $LINENO: $BASH_COMMAND" >&2' ERR
 [[ $EUID -ne 0 ]] || { echo 'Executa sem sudo.' >&2; exit 1; }
